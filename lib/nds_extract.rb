@@ -20,8 +20,11 @@ end
 def directors_totals(nds)
   result={}
   special_index=0 
+  while special_index<nds.length do
   all_director= nds[special_index]
   result[all_director[:name]]
 =gross_for_director(director_data)  
   special_index+=1
+end
+result
 end
