@@ -17,7 +17,7 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
-def directors_totals(nds, row_index, column_index)
+def directors_totals(nds)
   pp nds
   result = {}
   name=nds[row_index][:name]
