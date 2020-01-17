@@ -18,8 +18,9 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  special_index=0 
+  all_director= nds[special_index]
   
   
-  
-  
+  special_index+=1
 end
