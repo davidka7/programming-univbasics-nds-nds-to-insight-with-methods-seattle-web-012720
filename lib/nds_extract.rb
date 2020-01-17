@@ -22,6 +22,6 @@ def directors_totals(nds)
   result = {}
   name=nds[row_index][:name]
   result[name]=0 
-  result[name]+= nds[row_index][:movies][column_index][:worldwide_grosses]
+  result[name]+= nds[row_index][:movies][column_index][:worldwide_gross]
   return result
 end
