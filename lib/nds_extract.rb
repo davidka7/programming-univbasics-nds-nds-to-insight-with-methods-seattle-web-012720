@@ -13,8 +13,10 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
-def directors_totals(nds, row_index)
+def directors_totals(nds, row_index, column_index)
   result = {}
-  nil
-  
+  name=nds[row_index][:name]
+  result[name]=0 
+  result[name]+=
+  result
 end
