@@ -5,7 +5,7 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data, row_index, column_index)
 total=0 
-total+=director_data[row_index][:movies][column_index][:worldwide_gross]
+total+=director_data[row_index][:movies][column_index][:worldwide_grosses]
 total
 end
 
@@ -17,6 +17,6 @@ def directors_totals(nds, row_index, column_index)
   result = {}
   name=nds[row_index][:name]
   result[name]=0 
-  result[name]+=
-  result
+  result[name]+= nds[row_index][:movies][column_index][:worldwide_grosses]
+  return result
 end
