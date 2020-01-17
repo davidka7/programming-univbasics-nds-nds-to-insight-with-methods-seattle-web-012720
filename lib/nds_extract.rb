@@ -18,6 +18,7 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds, row_index, column_index)
+  pp nds
   result = {}
   name=nds[row_index][:name]
   result[name]=0 
