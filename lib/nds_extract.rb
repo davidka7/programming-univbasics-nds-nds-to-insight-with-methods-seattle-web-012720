@@ -6,8 +6,10 @@ require 'directors_database'
 def gross_for_director(director_data)
 total=0 
 column_index=0
+while column_index<director_data[:movies].length do 
 total+=director_data[:movies][column_index][:worldwide_grosses]
 column_index+=1
+end
 total
 end
 
